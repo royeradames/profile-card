@@ -1,37 +1,51 @@
 import React from 'react';
-import './App.css';
-import './app.scss';
+import 'normalize.css'
+import './css/border-box_fix_and_easy_rem.css';
+import './css/app.scss';
 
 function App() {
   return (
     <div className="App">
       <section className="section">
         <div className="section__inner">
-          <div className="section__card card">
+          <div className="card section__card ">
+            <div><img className="card__image" src={"./images/image-victor.jpg"} alt="Vicor Crest front facing "/></div>
             <div className="card__about">
               {/* about */}
-              <span className="card__about_bold">Victor Crest</span>
-              <span className="about_size_l">26</span>
-              London
+              <p>
+                <span className="card_bold">Victor Crest</span> 26
+              </p>
+              
+            </div>
+            <div className="card__location">
+              <p>
+                London
+              </p>
+
             </div>
     
+            <hr className="card_social_media_divider"/>
             <div className="card__followers ">
-            	{/* followers */}
-            	<span className="card_bold">80K</span>
-            	Followers
+              {/* followers */}
+              <p>
+                <span className="card_bold">80K</span> Followers
+              </p>
             </div>
     
             <div className="card__likes">
               {/* likes */}
-              <span className="card_bold">803K</span>
-              Likes            
+              <p>
+                <span className="card_bold">803K</span>
+                Likes
+              </p>            
             </div>
-
     
             <div className="card__photos">
               {/* photos */}
-              <span className="card_bold">1.4K</span>
-              Photos
+              <p>
+                <span className="card_bold">1.4K</span>
+                Photos
+              </p>
             </div>
           </div>
         </div>

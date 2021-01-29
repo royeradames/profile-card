@@ -1,0 +1,51 @@
+/* colors */
+$dark_cyan: hsl(185, 75%, 39%);
+$dark_blue: hsl(229, 23%, 23%);
+$grey_blue:  hsl(227, 10%, 46%);
+$neutral: hsl(0, 0%, 59%);
+$white: hsl(0, 0%, 100%);
+$black: rgba(0,0,0, 0.38);
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.section{
+    &__inner{
+        margin: 7rem 2rem;
+    }
+}
+
+
+.card{
+    color: $neutral;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 5%;
+    box-shadow: 0 0 .2rem .2rem $black;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: $white;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+
+    &__image{
+        border-radius: 50%;
+        border: .5rem solid $white;
+        margin-top: 8rem;
+    }
+    &_bold{
+        font-weight: bolder;
+        color: $dark_blue;
+    }
+    &_social_media_divider{
+        border-top: .1rem solid $neutral;
+    }
+}
+
+html, body{
+    height: 100%;
+}
